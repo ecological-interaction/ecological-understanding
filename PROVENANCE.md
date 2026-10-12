@@ -14,7 +14,10 @@ duplicate current authorities.
 
 Original repository:
 
-- Local path: `/Users/jonathan/Github/ecological-understanding`
+- Historical local path:
+  `/Users/jonathan/Github/ecological-understanding`
+- Current local path:
+  `/Users/jonathan/Github/ecological-understanding/_umbrella`
 - Configured remote: `https://github.com/Jonathan-Minchin/ecological-understanding.git`
 - Live remote existence and accessibility remain unverified.
 

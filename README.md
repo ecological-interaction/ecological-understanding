@@ -41,16 +41,18 @@ Permanent GitHub links can be added after these repositories are published.
 
 ## Current repository status
 
-This repository remains at its original local path and retains its
-complete historical Git record.
+This repository serves as the Ecological Understanding
+domain umbrella within the Ecological Interaction ecosystem.
+It retains its complete historical Git record.
 
 No independent course repositories are currently catalogued here.
 The educational scope above describes the domain's intended work,
 not a claim that those courses or resources are implemented in this repository.
 
-The planned architecture places this existing repository in an
-`_umbrella` directory beside future independent course repositories.
-That relocation has not occurred.
+The containing `ecological-understanding/` directory is an
+ordinary organisational directory. Independent course
+repositories may be introduced beside `_umbrella/`
+when approved.
 
 ## Historical research material
 
