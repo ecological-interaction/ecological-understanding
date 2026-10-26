@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "EU-C-9999",
+  "title": "Synthetic programme assembly example",
+  "summary": "Schema illustration only; excluded from the catalogue.",
+  "version": "0.1.0",
+  "status": "outline",
+  "functions": [
+    "Education & Programmes",
+    "Research"
+  ],
+  "domains": [
+    "EU-02",
+    "EU-04",
+    "EU-07"
+  ],
+  "content_type": "Full Programme",
+  "pathways": [
+    "Technical",
+    "Applied"
+  ],
+  "difficulty": {
+    "level": 3,
+    "rationale": "Illustrates a programme requiring basic image handling and output interpretation."
+  },
+  "research_questions": [],
+  "learning_objectives": [
+    "Illustrate how ordered component references form a programme."
+  ],
+  "practical_tasks": [],
+  "expected_outputs": [
+    "An ordered assembly definition."
+  ],
+  "prerequisites": [],
+  "related_modules": [],
+  "source_references": [],
+  "intended_audiences": [
+    "Courseware authors"
+  ],
+  "resource_location": {
+    "kind": "local",
+    "target": "architecture/programme-example.yaml"
+  },
+  "estimated_hours": null,
+  "language": "en",
+  "authors": [
+    "Ecological Understanding drafting process"
+  ],
+  "licence": null,
+  "created": "2026-10-26",
+  "updated": "2026-10-26",
+  "reviewed_on": null,
+  "publication_url": null,
+  "programme": {
+    "context": "Synthetic example; not an established course.",
+    "estimated_hours": null,
+    "entries": [
+      {
+        "resource_id": "EU-C-0001",
+        "version": "0.1.0",
+        "required": true,
+        "adaptation_notes": "Placeholder reference only. Replace with a registered, reviewed component and its real version."
+      }
+    ],
+    "assessment": "Review the assembly definition and explain its unresolved member reference."
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "schema_version": "0.1.0",
+  "inventory_date": "2026-10-26",
+  "status": "review-draft",
+  "classification_note": "All proposed classifications and outputs require editorial review. Candidate IDs are not registered module IDs.",
+  "candidates": [
+    {
+      "candidate_id": "EU-CAND-0001",
+      "title": "Surveilling Nature",
+      "evidence_status": "context-only",
+      "development_status": "partially-developed-reported",
+      "functions": [
+        "Research",
+        "Methods & Tools",
+        "Education & Programmes",
+        "Applied Practice"
+      ],
+      "domains": [
+        "EU-01",
+        "EU-02",
+        "EU-03",
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "Full Programme",
+      "proposed_pathways": [
+        "Introductory",
+        "Technical",
+        "Research"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Observation strategy",
+        "Technology comparison",
+        "Monitored study proposal"
+      ],
+      "sources": [
+        "Planning context: short course with 6–8 modules and reported technology-focused slides",
+        "Local umbrella README names the course"
+      ],
+      "limitations": "Slides and chapter documents not located or inspected; exact module structure, licence and source version unresolved.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0002",
+      "title": "GIS and Remote Sensing",
+      "evidence_status": "context-only",
+      "development_status": "partially-developed-reported",
+      "functions": [
+        "Research",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-03",
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "Full Programme",
+      "proposed_pathways": [
+        "Introductory",
+        "Technical",
+        "Applied"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Spatial source inventory",
+        "Documented map workflow",
+        "Place-specific spatial analysis"
+      ],
+      "sources": [
+        "Planning context: concepts/theory, methods/tools and application; brief indicator/use-case reference requested"
+      ],
+      "limitations": "No source teaching document inspected. This three-part grouping is a proposed interpretation of the supplied planning context, pending source confirmation.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0003",
+      "title": "Ecological Interactions master's seminar",
+      "evidence_status": "local-mention-only",
+      "development_status": "scope-only",
+      "functions": [
+        "Research",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-01",
+        "EU-05",
+        "EU-08"
+      ],
+      "proposed_content_type": "Teaching Module",
+      "proposed_pathways": [
+        "Advanced",
+        "Research"
+      ],
+      "proposed_difficulty": {
+        "level": 4,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Critical reading synthesis",
+        "Research-question presentation"
+      ],
+      "sources": [
+        "ecological-understanding/ecological-understanding/README.md names Ecological Interactions Seminar",
+        "User task identifies a master’s seminar"
+      ],
+      "limitations": "No syllabus, readings or slides inspected. Difficulty derives from proposed work, not the degree label alone.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0004",
+      "title": "Course Technical Components",
+      "evidence_status": "context-only",
+      "development_status": "scope-only",
+      "functions": [
+        "Research",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-02",
+        "EU-07"
+      ],
+      "proposed_content_type": "Teaching Module",
+      "proposed_pathways": [
+        "Technical"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Candidate method inventory",
+        "Component dependency map"
+      ],
+      "sources": [
+        "Planning conversation title supplied in project context"
+      ],
+      "limitations": "No substantive material inspected. Domain and level assignments are tentative; this label may represent a collection rather than a single module.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0005",
+      "title": "Four Ways of Seeing Green",
+      "evidence_status": "context-only",
+      "development_status": "partially-developed-reported",
+      "functions": [
+        "Methods & Tools",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "Teaching Module",
+      "proposed_pathways": [
+        "Technical",
+        "Applied"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Comparison of GRVI, ExG, VARI and GLI",
+        "Interpretation and illumination-limit report"
+      ],
+      "sources": [
+        "Planning context identifies the four indices",
+        "GRVI and ExG implementations inspected separately"
+      ],
+      "limitations": "No comparative lesson, VARI or GLI implementation inspected. Existing individual scripts do not establish the complete four-index module.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0006",
+      "title": "rgb_to_grvi_video",
+      "evidence_status": "source-inspected",
+      "development_status": "existing-software-needs-teaching-adaptation",
+      "functions": [
+        "Methods & Tools",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-02",
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "How-to",
+      "proposed_pathways": [
+        "Technical",
+        "Applied"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "False-colour GRVI MP4 with documented display parameters",
+        "Reproducibility and interpretation note"
+      ],
+      "sources": [
+        "/Users/jonathan/Github/ecological-computing/rgb_to_grvi_video/README.md",
+        "/Users/jonathan/Github/ecological-computing/rgb_to_grvi_video/src/rgb_to_grvi_video/rgb_to_grvi_video.py",
+        "/Users/jonathan/Github/ecological-computing/rgb_to_grvi_video/docs/README.md"
+      ],
+      "limitations": "GRVI processing and optional blur, dark-pixel masking and denoising are visible in source. Display choices do not establish vegetation health or calibrated reflectance. Code was read, not executed. Methods documentation is a placeholder; no completed tutorial, licence or pinned revision was verified.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0007",
+      "title": "rgb_to_exg_video",
+      "evidence_status": "source-inspected",
+      "development_status": "existing-software-needs-teaching-adaptation",
+      "functions": [
+        "Methods & Tools",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-02",
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "How-to",
+      "proposed_pathways": [
+        "Technical",
+        "Applied"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "False-colour ExG MP4 and processing record",
+        "Reproducibility and interpretation note"
+      ],
+      "sources": [
+        "/Users/jonathan/Github/ecological-computing/rgb_to_exg_video/README.md",
+        "/Users/jonathan/Github/ecological-computing/rgb_to_exg_video/src/rgb_to_exg_video/rgb_to_exg_video.py",
+        "/Users/jonathan/Github/ecological-computing/rgb_to_exg_video/docs/README.md"
+      ],
+      "limitations": "Source calculates raw-channel ExG = 2G − R − B. It is not a normalised-chromaticity implementation; record illumination, exposure and display range. Code was read, not executed. Methods documentation is a placeholder; no completed tutorial, licence or pinned revision was verified.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0008",
+      "title": "conir_to_ndvi_image",
+      "evidence_status": "source-inspected",
+      "development_status": "existing-software-needs-teaching-adaptation",
+      "functions": [
+        "Methods & Tools",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-02",
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "How-to",
+      "proposed_pathways": [
+        "Technical",
+        "Applied"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Index visualisation, optional colour scale and channel-assumption report",
+        "Reproducibility and interpretation note"
+      ],
+      "sources": [
+        "/Users/jonathan/Github/ecological-computing/conir_to_ndvi_image/README.md",
+        "/Users/jonathan/Github/ecological-computing/conir_to_ndvi_image/src/conir_to_ndvi_image/conir_to_ndvi_image.py",
+        "/Users/jonathan/Github/ecological-computing/conir_to_ndvi_image/docs/README.md"
+      ],
+      "limitations": "Source assumes OpenCV BGR channels map to cyan/orange/NIR and uses (NIR − Orange)/(NIR + Orange + epsilon). Orange is not verified as a calibrated red band; do not present output as validated standard NDVI without spectral and radiometric checks. Code was read, not executed. Methods documentation is a placeholder; no completed tutorial, licence or pinned revision was verified.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0009",
+      "title": "Compare GRVI and ExG under controlled display settings",
+      "evidence_status": "proposed",
+      "development_status": "proposed-future-component",
+      "functions": [
+        "Methods & Tools",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "How-to",
+      "proposed_pathways": [
+        "Technical",
+        "Applied"
+      ],
+      "proposed_difficulty": {
+        "level": 3,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Paired outputs from a common input",
+        "Display-versus-computation comparison"
+      ],
+      "sources": [
+        "Proposed adaptation of separately inspected GRVI and ExG repositories"
+      ],
+      "limitations": "No comparison exercise exists in inspected material. Needs common input permissions, controlled exposure and an evaluation protocol.",
+      "catalogue_ready": false
+    },
+    {
+      "candidate_id": "EU-CAND-0010",
+      "title": "Reproducible vegetation-index processing record",
+      "evidence_status": "proposed",
+      "development_status": "proposed-future-component",
+      "functions": [
+        "Methods & Tools",
+        "Education & Programmes"
+      ],
+      "domains": [
+        "EU-02",
+        "EU-04",
+        "EU-07"
+      ],
+      "proposed_content_type": "How-to",
+      "proposed_pathways": [
+        "Introductory",
+        "Technical"
+      ],
+      "proposed_difficulty": {
+        "level": 2,
+        "rationale": "Provisional assessment of the proposed adaptation; not a judgement of completed courseware."
+      },
+      "potential_outputs": [
+        "Input/source provenance record",
+        "Software versions and parameter log",
+        "Explicit interpretation limits"
+      ],
+      "sources": [
+        "Proposed shared preparation component for existing computation scripts"
+      ],
+      "limitations": "New authoring required; no lesson or checklist claimed to exist.",
+      "catalogue_ready": false
+    }
+  ]
+}

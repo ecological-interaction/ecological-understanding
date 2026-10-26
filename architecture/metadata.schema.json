@@ -1,0 +1,531 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ecological Understanding Resource Metadata v0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^EU-C-[0-9]{4,}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "outline",
+        "draft",
+        "reviewed",
+        "published",
+        "archived"
+      ]
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Research",
+          "Methods & Tools",
+          "Education & Programmes",
+          "Applied Practice"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "EU-01",
+          "EU-02",
+          "EU-03",
+          "EU-04",
+          "EU-05",
+          "EU-06",
+          "EU-07",
+          "EU-08",
+          "EU-09",
+          "EU-10"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "Research",
+        "How-to",
+        "Teaching Module",
+        "Full Programme",
+        "Application"
+      ]
+    },
+    "pathways": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Introductory",
+          "Technical",
+          "Intermediate",
+          "Advanced",
+          "Research",
+          "Applied"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "difficulty": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "level",
+        "rationale"
+      ]
+    },
+    "research_questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "learning_objectives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "practical_tasks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "knowledge",
+              "skill",
+              "equipment",
+              "resource"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resource_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^EU-C-[0-9]{4,}$"
+          }
+        },
+        "required": [
+          "kind",
+          "description"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "resource"
+                }
+              },
+              "required": [
+                "kind"
+              ]
+            },
+            "then": {
+              "required": [
+                "resource_id"
+              ],
+              "properties": {
+                "resource_id": {
+                  "type": "string",
+                  "pattern": "^EU-C-[0-9]{4,}$"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "related_modules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EU-C-[0-9]{4,}$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "source_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "repository": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date"
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": [
+              "inspected",
+              "context-only",
+              "not-inspected"
+            ]
+          },
+          "reuse_status": {
+            "type": "string",
+            "enum": [
+              "permission-confirmed",
+              "link-only",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "title",
+          "url",
+          "repository",
+          "path",
+          "version",
+          "accessed",
+          "evidence_status",
+          "reuse_status"
+        ]
+      },
+      "minItems": 0
+    },
+    "intended_audiences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "resource_location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "local",
+            "external"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "target"
+      ]
+    },
+    "estimated_hours": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "licence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "reviewed_on": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "publication_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "programme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "estimated_hours": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "resource_id": {
+                "type": "string",
+                "pattern": "^EU-C-[0-9]{4,}$"
+              },
+              "version": {
+                "type": "string",
+                "pattern": "^\\d+\\.\\d+\\.\\d+$"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "adaptation_notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "resource_id",
+              "version",
+              "required",
+              "adaptation_notes"
+            ]
+          },
+          "minItems": 1
+        },
+        "assessment": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "context",
+        "estimated_hours",
+        "entries",
+        "assessment"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "summary",
+    "version",
+    "status",
+    "functions",
+    "domains",
+    "content_type",
+    "pathways",
+    "difficulty",
+    "research_questions",
+    "learning_objectives",
+    "practical_tasks",
+    "expected_outputs",
+    "prerequisites",
+    "related_modules",
+    "source_references",
+    "intended_audiences",
+    "resource_location",
+    "estimated_hours",
+    "language",
+    "authors",
+    "licence",
+    "created",
+    "updated"
+  ],
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "properties": {
+            "research_questions": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "properties": {
+            "learning_objectives": {
+              "minItems": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "if": {
+        "properties": {
+          "content_type": {
+            "const": "Full Programme"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "programme"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "programme"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "reviewed",
+              "published"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "reviewed_on"
+        ],
+        "properties": {
+          "reviewed_on": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "published"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "publication_url"
+        ],
+        "properties": {
+          "publication_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  ]
+}
