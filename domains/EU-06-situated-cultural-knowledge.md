@@ -4,6 +4,9 @@ title: "Situated & Cultural Knowledge"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Place-based knowledge expressed through experience, stories, craft and material culture. Addresses attribution, consent and interpretation."
+subject_classification: practice
+approach: systems
 ---
 
 # EU-06 — Situated & Cultural Knowledge

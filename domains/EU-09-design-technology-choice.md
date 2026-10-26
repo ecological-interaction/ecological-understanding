@@ -4,6 +4,9 @@ title: "Ecological Design & Technology Choice"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Place-specific design and technology selection informed by ecological evidence. Evaluates resource demands, maintenance and alternatives."
+subject_classification: practice
+approach: design
 ---
 
 # EU-09 — Ecological Design & Technology Choice

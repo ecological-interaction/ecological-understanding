@@ -4,6 +4,9 @@ title: "Ecological Concepts & Theory"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Concepts, histories and theories for explaining ecological relationships. Examines the assumptions behind observation, interpretation and practice."
+subject_classification: concept
+approach: systems
 ---
 
 # EU-01 — Ecological Concepts & Theory

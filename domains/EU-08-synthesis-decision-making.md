@@ -4,6 +4,9 @@ title: "Ecological Synthesis & Decision-Making"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Combines scientific evidence and situated knowledge to compare options and inform decisions. Keeps trade-offs, uncertainty and provenance visible."
+subject_classification: practice
+approach: systems
 ---
 
 # EU-08 — Ecological Synthesis & Decision-Making

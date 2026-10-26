@@ -4,6 +4,9 @@ title: "Observation & Monitoring"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Field methods, instruments and sampling strategies for ecological observation. Covers calibration, monitoring design and evidence quality."
+subject_classification: biology
+approach: technology
 ---
 
 # EU-02 — Observation & Monitoring

@@ -4,6 +4,9 @@ title: "Geographic & Spatial Understanding"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "GIS, cartography and remote sensing for investigating places and spatial patterns. Considers scale, change and mapping uncertainty."
+subject_classification: geography
+approach: computation
 ---
 
 # EU-03 — Geographic & Spatial Understanding

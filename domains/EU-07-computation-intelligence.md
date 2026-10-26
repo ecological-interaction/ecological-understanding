@@ -4,6 +4,9 @@ title: "Ecological Computation & Intelligence"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Reproducible processing, modelling and analytical tools for ecological observations. Connects computation with interpretation, prediction and their validation limits."
+subject_classification: ecology
+approach: computation
 ---
 
 # EU-07 — Ecological Computation & Intelligence

@@ -4,6 +4,9 @@ title: "Systems Science & Ecological Relationships"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Feedbacks, networks and cross-scale relationships in ecological and social–ecological systems. Makes system boundaries and modelling assumptions explicit."
+subject_classification: ecology
+approach: systems
 ---
 
 # EU-05 — Systems Science & Ecological Relationships

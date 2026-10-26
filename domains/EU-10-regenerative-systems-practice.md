@@ -4,6 +4,9 @@ title: "Regenerative Systems & Practice"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Restoration, agroecology and monitored interventions intended to improve ecological functioning. Evaluates outcomes against baselines through adaptive learning."
+subject_classification: ecology
+approach: design
 ---
 
 # EU-10 — Regenerative Systems & Practice

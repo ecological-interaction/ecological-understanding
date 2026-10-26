@@ -4,6 +4,9 @@ title: "Ecological Indicators & Inference"
 page_kind: domain
 status: foundational-draft
 taxonomy_version: 0.1.0
+card_summary: "Measured variables, indices and proxies for ecological interpretation. Examines validation, uncertainty and the limits of inference."
+subject_classification: ecology
+approach: computation
 ---
 
 # EU-04 — Ecological Indicators & Inference
